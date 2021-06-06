@@ -162,13 +162,9 @@ header nav .menu ul li {
     background-size: cover;
 }
 
-
-
 .section-four .product-item {
-    /* width: 45%; */
-    padding: 10px;
-    /* height: 100%; */
-    
+    width: 50%;
+    padding: 10px; 
 }
 
 .section-four button {
@@ -206,30 +202,49 @@ header nav .menu ul li {
 }
 
 .section-six {
-    padding: 20px 0;
+    padding: 20px;
 }
 
-.gift-container {
+.section-six .product-container .gift-right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gift-left {
+    background: url(../images/giftcard-template.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.gift-right {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+/*.gift-container {
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 500px;
+    height: 300px;
 }
 
-.right-block {
+ .right-block {
     width: 30%;
     background: url(../images/giftcard-template.jpg) center no-repeat;
     background-size: cover;
 }
 
 .purchase-gift {
-    width: 70%;
+     width: 70%; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} 
 
 .purchase-gift button {
     background-color: white;
@@ -241,7 +256,7 @@ header nav .menu ul li {
     color: white;
     border: 2px solid white;
     transition-duration: 0.4s;
-}
+} */
 
  
 @media only screen and (max-width: 800px) {
@@ -280,16 +295,21 @@ header nav .menu ul li {
     .section-two .product-item p {
         font-size: 20px;
     }
-
     
-.product-container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .product-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .section-four .product-item {
+        width: 100%;
+    }
+    .section-five .btn {
+        margin: 10px;
+    }
 }
 
 .burgerMenu{
