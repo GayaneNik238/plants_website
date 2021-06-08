@@ -232,6 +232,46 @@ header nav .menu ul li {
     padding: 10px;
 }
 
+.pic-bg {
+    height: 400px;
+    width: 100%;
+    background: url(../images/section5.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-story-shop-text {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.our-story-pic-section {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.our-story-pic {
+    background: url(../images/plant-textures-2.jpg) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.our-story-pic-section .normal-text-left {
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.our-story-pic-section .normal-text {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
 
 
 
