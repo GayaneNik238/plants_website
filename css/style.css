@@ -6,10 +6,6 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-body {
-    /* background-color: dimgrey; */
-}
-
 .flex__box {
     display: flex;
     justify-content: space-between;
@@ -273,8 +269,24 @@ header nav .menu ul li {
     text-align: left;
 }
 
+#shop-header .section-four {
+    background-color: #38383B;
+    margin: 20px 0;
+    text-align: center;
+}
 
+.read-more-link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: dimgrey;
+    display: block;
+    padding: 20px ;
+}
 
+.read-more-link:hover {
+    color: white;
+    transition-duration: 1s;
+}
 
 
 
