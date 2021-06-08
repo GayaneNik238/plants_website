@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: dimgrey;
+    /* background-color: dimgrey; */
 }
 
 .flex__box {
@@ -15,12 +15,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-/* body {
-    margin:0;
-    position: relative;
-    z-index: -1;
-} */
 
 ul {
     list-style-type: none;
@@ -32,10 +26,6 @@ a {
 }
 
 header {
-    /* height:100vh;
-    overflow: auto;
-    position: relative;
-    z-index:-2; */
     z-index: 1;
     color:white;
     font-size: 15px;
@@ -45,26 +35,19 @@ header {
 header::after {
     position: absolute;
     content: "";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color: rgb(22, 22, 24);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(22, 22, 24); */
     opacity: 0.7;
-    z-index:-1;
+    z-index: -1;
 }
 
 .container {
     width:90%;
     margin:0 auto;
-    }
-
-/* .menu {
-    width: 89%;
-    justify-content: flex-end;
-    font-weight: 600;
-    background-color: red;
-} */
+}
 
 #nav__ul {
     margin-right: 20px;
@@ -145,7 +128,6 @@ header nav .menu ul li {
 }
 
 .section-two .product-item {
-    /* width: 45%; */
     padding: 20px;
     height: 100%;
 }
@@ -157,9 +139,12 @@ header nav .menu ul li {
 .section-three {
     height: 450px;
     width: 100%;
-    /* margin: 30px 0; */
     background: url(../images/section3-bg.jpg) center no-repeat;
     background-size: cover;
+}
+
+.section-four {
+    background-color: dimgrey;
 }
 
 .section-four .product-item {
@@ -203,6 +188,7 @@ header nav .menu ul li {
 
 .section-six {
     padding: 20px;
+    background-color: dimgrey;
 }
 
 .section-six .product-container .gift-right{
@@ -219,46 +205,43 @@ header nav .menu ul li {
     height: 400px;
 }
 
-.gift-right {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+/* shop page css*/
+#shop-header {
+    background-color: #38383B;
 }
-/*.gift-container {
-    width: 90%;
-    margin: auto;
+
+#shop-header header {
+    background-color: #38383B;
+}
+
+.shop-text {
+    margin: 30px 0;
+}
+
+.shop-plant-container  {
+    margin: 20px 0;
+}
+
+
+.shop-plant-item-row {
     display: flex;
-    justify-content: space-between;
-    height: 300px;
+    justify-content: space-around;
 }
 
- .right-block {
-    width: 30%;
-    background: url(../images/giftcard-template.jpg) center no-repeat;
-    background-size: cover;
+#shop-header .normal-text {
+    padding: 10px;
 }
 
-.purchase-gift {
-     width: 70%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} 
 
-.purchase-gift button {
-    background-color: white;
-    color: dimgrey;
-}
 
-.purchase-gift button:hover {
-    background-color: dimgrey;
-    color: white;
-    border: 2px solid white;
-    transition-duration: 0.4s;
-} */
 
- 
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
     header .container {
         position: relative;
@@ -267,8 +250,8 @@ header nav .menu ul li {
     .burger {
         display: block;
         position: absolute;
-        right:0.3em;
-        top:20%;
+        right: 0.3em;
+        top: 20%;
         font-size: 2em;
         z-index: 9;
         cursor: pointer;
@@ -281,11 +264,15 @@ header nav .menu ul li {
     }
 
     .menu ul {
-        padding: 0;
+        /* padding: 0; */
+        margin-right: 0;
+        background-color: tomato;
     }
 
     header nav .menu .icons{
         width:90%;
+        background-color: teal;
+
     }
 
     #nav__ul {
@@ -307,8 +294,15 @@ header nav .menu ul li {
     .section-four .product-item {
         width: 100%;
     }
+
     .section-five .btn {
         margin: 10px;
+    }
+
+    .shop-plant-item-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
