@@ -303,8 +303,38 @@ header nav .menu ul li {
     text-align: center;
 }
 
+#gift-card-purchase {
+    background-color: #383838;
+}
 
+#gCard-value {
+    padding: 15px 20px;
+    width: 200px;
+    background-color: #38383B;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+}
 
+select {
+    appearance: none;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+.gCard-form {
+    padding-top: 20px;
+}
+
+#gift-card {
+    width: 200px;
+    margin-top: 20px;
+    margin-right: -75px;    
+    padding: 15px 20px;
+}
 
 
 

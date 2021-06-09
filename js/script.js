@@ -29,3 +29,9 @@ window.addEventListener("resize", function () {
         }
     }
 });
+
+document.getElementById('gCard-value').addEventListener('change', getValue);
+function getValue() {
+    let selectedValue = document.getElementById('gCard-value').value;
+    document.getElementById('gift-card-value').innerHTML = selectedValue;
+}
