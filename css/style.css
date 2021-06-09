@@ -177,7 +177,7 @@ header nav .menu ul li {
     font-size: 20px;
 }
 
-.email-container .btn {
+.email-container .   {
     padding: 10px 20px;
     border: none;
 }
@@ -279,13 +279,28 @@ header nav .menu ul li {
     text-decoration: underline;
     text-underline-offset: 2px;
     color: dimgrey;
-    display: block;
+    display: inline-block;
     padding: 20px ;
 }
 
 .read-more-link:hover {
     color: white;
-    transition-duration: 1s;
+    transition-duration: 0.7s;
+}
+
+
+.contact-bg {
+    height: 100vh;
+    background: url(../images/section5.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 50%;
+    text-align: center;
 }
 
 
@@ -355,6 +370,10 @@ header nav .menu ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-container {
+        width: 70%;
     }
 }
 
