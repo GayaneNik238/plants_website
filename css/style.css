@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
 }
 
 .flex__box {
@@ -177,7 +177,7 @@ header nav .menu ul li {
     font-size: 20px;
 }
 
-.email-container .   {
+.email-container {
     padding: 10px 20px;
     border: none;
 }
@@ -223,6 +223,7 @@ header nav .menu ul li {
     display: flex;
     justify-content: space-around;
 }
+
 
 #shop-header .normal-text {
     padding: 10px;
@@ -305,6 +306,7 @@ header nav .menu ul li {
 
 #gift-card-purchase {
     background-color: #383838;
+
 }
 
 #gCard-value {
@@ -336,6 +338,55 @@ select:focus {
     padding: 15px 20px;
 }
 
+.sign-up {
+    padding: 10px 20px;
+}
+
+
+#login-box {
+    border: 1px solid #000;
+    padding: 15px;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background-color: white;
+    color: dimgrey;
+    display: none;
+}
+
+#login-box input {
+    background-color: #fafafa;
+    border: 1px solid dimgrey;
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+    width: 80%;
+}
+
+#login-box .input-row  input {
+    width: 45%;
+    margin: 0px;
+}
+
+.get-in-touch-btn {
+    background-color: #272727;
+    /* margin: 10px auto; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+
+}
 
 
 
