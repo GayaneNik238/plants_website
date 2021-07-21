@@ -4,6 +4,13 @@ let ul = menu.querySelector("ul");
 let lis = ul.querySelectorAll("li");
 let icons = menu.querySelector(".icons");
 
+
+let imagesSlider = [
+    "url(images/1.jpg)",
+    "url(images/2.jpg)",
+    "url(images/3.jpg)"
+]
+
 burger.addEventListener("click", function (e) {
     menu.classList.toggle("burgerMenu");
     ul.classList.toggle("burgerUl");
@@ -59,3 +66,30 @@ function getValue() {
     let selectedValue = document.getElementById("gCard-value").value;
     document.getElementById("gift-card-value").innerHTML = selectedValue;
 };
+
+let sliderBg = document.querySelector(".shop-item-slider");
+let prevBtn = document.querySelector(".prev-button");
+let nextBtn = document.querySelector(".next-button");
+
+let i = 0;
+sliderBg.style.backgroundImage = imagesSlider[i];
+sliderBg.style.backgroundRepeat = "no-repeat";
+    sliderBg.style.backgroundPosition = "center center";
+    sliderBg.style.backgroundSize = "cover";
+
+nextBtn.addEventListener("click", function() {
+    i++;
+    if(i > imagesSlider.length - 1) {
+        i = 0;
+    }
+    sliderBg.style.backgroundImage = imagesSlider[i];
+})
+
+prevBtn.addEventListener("click", function() {
+    i--;
+    if(i < 0) {
+        i = imagesSlider.length - 1;
+    }
+    sliderBg.style.backgroundImage = imagesSlider[i];
+})
+

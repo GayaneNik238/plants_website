@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .flex__box {
@@ -387,6 +387,44 @@ select:focus {
     padding: 10px;
 
 }
+
+.shop-navigation {
+    padding: 40px 0;
+}
+
+.shop-item-container {
+    background-color: teal;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.shop-item-slider {
+    width: 48%;
+    background-color: tomato;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item-info {
+    width: 48%;
+    background-color: lightblue;
+}
+
+.prev-button, .next-button {
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+
+
 
 
 
