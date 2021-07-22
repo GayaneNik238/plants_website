@@ -222,8 +222,97 @@ header nav .menu ul li {
 .shop-plant-item-row {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
+.shop-plant-item {
+    width: 22%;
+}
+
+.shop-plant-bg {
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    height: 300px;    
+}
+
+.lily {
+    background-image: url(../images/1.jpg)
+}
+
+.lily:hover {
+    background-image: url(../images/9.jpg);
+    transition-duration: 0.8s;
+}
+
+.pencilPlant {
+    background-image: url(../images/2.jpg)
+}
+
+.pencilPlant:hover {
+    background-image: url(../images/10.jpg);
+    transition-duration: 0.8s;
+}
+
+.alocasia {
+    background-image: url(../images/3.jpg);
+}
+
+.alocasia:hover {
+    background-image: url(../images/11.jpg);
+    transition-duration: 0.8s;
+}
+
+.snake {
+    background-image: url(../images/6.jpg);
+}
+
+.snake:hover {
+    background-image: url(../images/12.jpg);
+    transition-duration: 0.8s;
+}
+
+.orchid {
+    background-image: url(../images/15.jpg);
+}
+
+.orchid:hover {
+    background-image: url(../images/12.jpg);
+    transition-duration: 0.8s;
+}
+
+.cactus {
+    background-image: url(../images/4.jpg);
+}
+
+.cactus:hover {
+    background-image: url(../images/13.jpg);
+    transition-duration: 0.8s;
+}
+
+.palm {
+    background-image: url(../images/7.jpg);
+}
+
+.palm:hover {
+    background-image: url(../images/14.jpg);
+    transition-duration: 0.8s;
+}
+
+.fern {
+    background-image: url(../images/8.jpg);
+}
+
+.fern:hover {
+    background-image: url(../images/15.jpg);
+    transition-duration: 0.8s;
+}
+
+
+#shop-header .shop-plant-item .normal-text{
+    padding: 2px;
+}
 
 #shop-header .normal-text {
     padding: 10px;
@@ -346,10 +435,10 @@ select:focus {
 #login-box {
     border: 1px solid #000;
     padding: 15px;
-    width: 40%;
+    width: 50%;
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 25%;
     background-color: white;
     color: dimgrey;
     display: none;
@@ -390,6 +479,10 @@ select:focus {
 
 .shop-navigation {
     padding: 40px 0;
+}
+
+.shop-navigation i {
+    font-size: 10px;
 }
 
 .shop-item-container {
@@ -489,6 +582,12 @@ select:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
+    }
+
+    .shop-plant-item {
+        width: 90%;
+        margin: 0 auto 10px;
     }
 
     .contact-container {
@@ -504,6 +603,11 @@ select:focus {
 
     .shop-item-info, .shop-item-slider {
         width: 100%;
+    }
+
+    #login-box {
+        width: 90%;
+        left: 5%;
     }
 }
 

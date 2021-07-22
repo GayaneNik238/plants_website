@@ -92,8 +92,8 @@ let nextBtn = document.querySelector(".next-button");
 let i = 0;
 sliderBg.style.backgroundImage = imagesSlider[i];
 sliderBg.style.backgroundRepeat = "no-repeat";
-    sliderBg.style.backgroundPosition = "center center";
-    sliderBg.style.backgroundSize = "cover";
+sliderBg.style.backgroundPosition = "center center";
+sliderBg.style.backgroundSize = "cover";
 
 nextBtn.addEventListener("click", function() {
     i++;
