@@ -309,7 +309,7 @@ header nav .menu ul li {
 
 }
 
-#gCard-value {
+#gCard-value, #shop-plant-size-value, #shop-plant-qnt-value {
     padding: 15px 20px;
     width: 200px;
     background-color: #38383B;
@@ -393,7 +393,6 @@ select:focus {
 }
 
 .shop-item-container {
-    background-color: teal;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -402,7 +401,6 @@ select:focus {
 
 .shop-item-slider {
     width: 48%;
-    background-color: tomato;
     height: 400px;
     display: flex;
     justify-content: space-between;
@@ -411,7 +409,9 @@ select:focus {
 
 .shop-item-info {
     width: 48%;
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .prev-button, .next-button {
@@ -493,6 +493,17 @@ select:focus {
 
     .contact-container {
         width: 70%;
+    }
+
+    .shop-item-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-item-info, .shop-item-slider {
+        width: 100%;
     }
 }
 

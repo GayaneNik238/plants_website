@@ -58,14 +58,32 @@ function showHideLogin() {
 let gCardValue = document.getElementById("gCard-value");
 if(gCardValue) {
     document.getElementById("gCard-value").addEventListener("change", getValue);
-
 }
-
 
 function getValue() {
     let selectedValue = document.getElementById("gCard-value").value;
     document.getElementById("gift-card-value").innerHTML = selectedValue;
 };
+
+let plantQnt = document.querySelector(".plant-quantity");
+let shopPlantSize = document.getElementById("shop-plant-size-value");
+
+
+if(shopPlantSize) {
+   
+    document.getElementById("shop-plant-size-value").addEventListener("change", function() {
+        let selectedSize = document.getElementById("shop-plant-size-value").value;
+
+        document.getElementById("shop-plant-size").innerHTML = selectedSize;
+            if(plantQnt) {
+        document.getElementById("shop-plant-qnt-value").addEventListener("change", function() {
+            let selectedQnt = document.getElementById("shop-plant-qnt-value").value;
+            document.getElementById("shop-plant-size").innerHTML = selectedQnt * selectedSize;
+       })
+    } 
+    })
+
+}
 
 let sliderBg = document.querySelector(".shop-item-slider");
 let prevBtn = document.querySelector(".prev-button");
