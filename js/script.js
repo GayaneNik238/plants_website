@@ -4,7 +4,6 @@ let ul = menu.querySelector("ul");
 let lis = ul.querySelectorAll("li");
 let icons = menu.querySelector(".icons");
 
-
 let imagesSlider = [
     "url(images/1.jpg)",
     "url(images/2.jpg)",
@@ -37,7 +36,6 @@ window.addEventListener("resize", function () {
     }
 });
 
-
 let loginBtns = document.querySelectorAll(".login-btn");
 if(loginBtns[0] || loginBtns[1]) {
     loginBtns[0].addEventListener("click", showHideLogin);
@@ -54,7 +52,6 @@ function showHideLogin() {
     }
 }
 
-
 let gCardValue = document.getElementById("gCard-value");
 if(gCardValue) {
     document.getElementById("gCard-value").addEventListener("change", getValue);
@@ -67,22 +64,23 @@ function getValue() {
 
 let plantQnt = document.querySelector(".plant-quantity");
 let shopPlantSize = document.getElementById("shop-plant-size-value");
+shopPlantSize.addEventListener("change", getTotalValue);
+plantQnt.addEventListener("input", getTotalValue);
 
 
-if(shopPlantSize) {
-   
-    document.getElementById("shop-plant-size-value").addEventListener("change", function() {
-        let selectedSize = document.getElementById("shop-plant-size-value").value;
-
-        document.getElementById("shop-plant-size").innerHTML = selectedSize;
-            if(plantQnt) {
-        document.getElementById("shop-plant-qnt-value").addEventListener("change", function() {
-            let selectedQnt = document.getElementById("shop-plant-qnt-value").value;
-            document.getElementById("shop-plant-size").innerHTML = selectedQnt * selectedSize;
-       })
+function getTotalValue() {
+    let selectedSize = document.getElementById("shop-plant-size-value").value;
+    let selectedQnt = document.querySelector(".plant-quantity").value;
+    if(selectedQnt !== "") {
+        document.getElementById("shop-plant-size").innerHTML = `$ ${parseInt(selectedSize) * selectedQnt}.00`;
     } 
-    })
-
+    else {
+        document.getElementById("shop-plant-size").innerHTML = `$ ${selectedSize}.00`
+    }
+     if(selectedSize === "- Select Size -") {
+        document.getElementById("shop-plant-size").innerHTML = "- Select Size ";
+        document.querySelector(".plant-quantity").value = ""
+    }
 }
 
 let sliderBg = document.querySelector(".shop-item-slider");
