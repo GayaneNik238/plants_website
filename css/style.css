@@ -515,8 +515,26 @@ select:focus {
     cursor: pointer;
 }
 
+.read-more-heading {
+    width: 100%;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+}
 
+.read-more-content {
+    width: 60%;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+}
 
+.read-more-img {
+    height: 400px;
+    width: 100%;
+    background: url(../images/4.gif) center no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -608,6 +626,10 @@ select:focus {
     #login-box {
         width: 90%;
         left: 5%;
+    }
+
+    .read-more-content {
+        width: 100%;
     }
 }
 

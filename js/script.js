@@ -69,18 +69,21 @@ plantQnt.addEventListener("input", getTotalValue);
 
 
 function getTotalValue() {
-    let selectedSize = document.getElementById("shop-plant-size-value").value;
-    let selectedQnt = document.querySelector(".plant-quantity").value;
-    if(selectedQnt !== "") {
-        document.getElementById("shop-plant-size").innerHTML = `$ ${parseInt(selectedSize) * selectedQnt}.00`;
-    } 
-    else {
-        document.getElementById("shop-plant-size").innerHTML = `$ ${selectedSize}.00`
-    }
-     if(selectedSize === "- Select Size -") {
-        document.getElementById("shop-plant-size").innerHTML = "- Select Size ";
-        document.querySelector(".plant-quantity").value = ""
-    }
+    // if(shopPlantSize && plantQnt) {
+        let selectedSize = document.getElementById("shop-plant-size-value").value;
+        let selectedQnt = document.querySelector(".plant-quantity").value;
+        if(selectedQnt !== "") {
+            document.getElementById("shop-plant-size").innerHTML = `$ ${parseInt(selectedSize) * selectedQnt}.00`;
+        } 
+        else {
+            document.getElementById("shop-plant-size").innerHTML = `$ ${selectedSize}.00`
+        }
+         if(selectedSize === "- Select Size -") {
+            document.getElementById("shop-plant-size").innerHTML = "- Select Size ";
+            document.querySelector(".plant-quantity").value = ""
+        }
+    // }
+ 
 }
 
 let sliderBg = document.querySelector(".shop-item-slider");
@@ -108,4 +111,5 @@ prevBtn.addEventListener("click", function() {
     }
     sliderBg.style.backgroundImage = imagesSlider[i];
 })
+
 
