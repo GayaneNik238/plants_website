@@ -7,7 +7,7 @@ let authorNames = [
 ];
 
 let currentDate = document.getElementById("current-date");
-let authorName = document.querySelectorAll(".author-name");
+let authorName = document.getElementById("author-name");
 
 currentDate.innerHTML = new Date().toLocaleDateString();
 
