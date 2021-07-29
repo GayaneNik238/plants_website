@@ -561,15 +561,11 @@ select:focus {
     }
 
     .menu ul {
-        /* padding: 0; */
         margin-right: 0;
-        background-color: tomato;
     }
 
     header nav .menu .icons{
         width:90%;
-        background-color: teal;
-
     }
 
     #nav__ul {
@@ -647,7 +643,7 @@ select:focus {
 }
 
 .burgerLi{
-    margin:1em 0;
+    margin: 1em 0;
 }
 
 .burgerUl{

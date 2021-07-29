@@ -11,5 +11,5 @@ let authorName = document.getElementById("author-name");
 
 currentDate.innerHTML = new Date().toLocaleDateString();
 
-let i = Math.floor(Math.random() * 5);
-authorName.innerHTML = authorNames[i];
+let j = Math.floor(Math.random() * 5);
+authorName.innerHTML = authorNames[j];
